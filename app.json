@@ -1,24 +1,13 @@
 {
   "name": "UniTweet",
-  "description": "See a twitter stream of universities in the US"
-  ],
+  "description": "See a twitter stream of universities in the US",
   "website": "https://wnitweet.me/",
   "repository": "https://github.com/cfuchs981/unitweet",
   "success_url": "/welcome",
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
-  },
 
   "buildpacks": [
     {
       "url": "heroku/php"
     }
-  ],
-  "environments": {
-    "test": {
-      "scripts": {
-        "test": "bundle exec rake test"
-      }
-    }
-  }
+  ]
 }
